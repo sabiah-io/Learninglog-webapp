@@ -1,0 +1,39 @@
+{% extends "learning_logs/base.html" %}
+
+{% block content %}
+
+<div class="container">
+
+
+    <div class="mt-4">
+        <p>Topics</p>
+    </div>
+
+    <ul class="list-group">
+        {% for topic in topics %}
+        <li class="list-group-item">
+            <a href="{% url 'topic' topic.id %}">{{ topic }}</a>
+            <a data-toggle="tooltip" data-placement="top" title="Delete" href="{% url 'delete' topic.id %}">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle-fil float-right" fill="red"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.146-3.146a.5.5 0 0 0-.708-.708L8 7.293 4.854 4.146a.5.5 0 1 0-.708.708L7.293 8l-3.147 3.146a.5.5 0 0 0 .708.708L8 8.707l3.146 3.147a.5.5 0 0 0 .708-.708L8.707 8l3.147-3.146z"/>
+                </svg>
+            </a>
+        </li>
+        {% empty %}
+        <li class="list-group-item">No topics have been added yet.</li>
+        {% endfor %}
+    </ul>
+
+    <div class="mt-4">
+        <a href="{% url 'new_topic' %}">
+            <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false">
+                Add a new topic
+            </button>
+        </a>
+
+    </div>
+</div>
+
+{% endblock %}

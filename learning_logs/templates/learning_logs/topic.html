@@ -1,0 +1,33 @@
+{% extends "learning_logs/base.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="mt-4">
+        <h4>{{ topic }}</h4>
+    </div>
+
+    <div class="mt-3">
+        <a href="{% url 'new_entry' topic.id %}">
+            <button type="button" name="submit" class="btn btn-secondary">add new entry</button>
+        </a>
+    </div>
+    <ul>
+        {% for entry in entries %}
+        <div class="jumbotron mt-4">
+            <p>{{ entry.date_added|date:'M d, Y H:i' }}</p>
+            <hr class="my-2">
+            <p>{{ entry.text|linebreaks }}</p>
+            <a class="btn btn-danger btn-sm" href="{% url 'delete_entry' entry.id %}" role="button">Delete</a>
+        </div>
+        {% empty %}
+        <div class="mt-3">
+            <li class="list-group-item">
+                There are no entries for this topic yet.
+            </li>
+        </div>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}

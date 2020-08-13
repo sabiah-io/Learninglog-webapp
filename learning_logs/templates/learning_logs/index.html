@@ -1,0 +1,71 @@
+{% extends "learning_logs/base.html" %}
+
+{% block content %}
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-interval="5000">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcToLETd_UPU19K6HRw1U9Th2r86EeH8HXzJGQ&amp;usqp=CAU"
+                class="d-block w-100" height="400"
+                alt="">
+            <div class="carousel-caption">
+                <h2 class="display-2">Track your learning</h2>
+            </div>
+        </div>
+        <div class="carousel-item" data-interval="5000">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSUu0LpX-NUUmsHv4zKmmsNFQsHuxXnQXk1DQ&amp;usqp=CAU"
+                class="d-block w-100" height="400"
+                alt="">
+            <div class="carousel-caption">
+                <h2 class="display-2">Track your learning</h2>
+            </div>
+        </div>
+        <div class="carousel-item" data-interval="5000">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ8eA2ejxU--Zt8xbLPesBt9_n_L87g0Z-eoA&amp;usqp=CAU"
+                class="d-block w-100" height="400" alt="">
+            <div class="carousel-caption">
+                <h2 class="display-2">Track your learning</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="row mb-5">
+        <div class="col-s5 mt-5 ml-5">
+            <svg width="17em" height="8em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                      d="M3.214 1.072C4.813.752 6.916.71 8.354 2.146A.5.5 0 0 1 8.5 2.5v11a.5.5 0 0 1-.854.354c-.843-.844-2.115-1.059-3.47-.92-1.344.14-2.66.617-3.452 1.013A.5.5 0 0 1 0 13.5v-11a.5.5 0 0 1 .276-.447L.5 2.5l-.224-.447.002-.001.004-.002.013-.006a5.017 5.017 0 0 1 .22-.103 12.958 12.958 0 0 1 2.7-.869zM1 2.82v9.908c.846-.343 1.944-.672 3.074-.788 1.143-.118 2.387-.023 3.426.56V2.718c-1.063-.929-2.631-.956-4.09-.664A11.958 11.958 0 0 0 1 2.82z"/>
+                <path fill-rule="evenodd"
+                      d="M12.786 1.072C11.188.752 9.084.71 7.646 2.146A.5.5 0 0 0 7.5 2.5v11a.5.5 0 0 0 .854.354c.843-.844 2.115-1.059 3.47-.92 1.344.14 2.66.617 3.452 1.013A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.276-.447L15.5 2.5l.224-.447-.002-.001-.004-.002-.013-.006-.047-.023a12.582 12.582 0 0 0-.799-.34 12.96 12.96 0 0 0-2.073-.609zM15 2.82v9.908c-.846-.343-1.944-.672-3.074-.788-1.143-.118-2.387-.023-3.426.56V2.718c1.063-.929 2.631-.956 4.09-.664A11.956 11.956 0 0 1 15 2.82z"/>
+            </svg>
+            <h6>Keep track of every topic you're learning.</h6>
+        </div>
+        <div class="col-s5 mt-5 ml-5">
+            <svg width="17em" height="8em" viewBox="0 0 16 16" class="bi bi-layers" fill="currentColor"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                      d="M3.188 8L.264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l-1.063.567L14.438 10 8 13.433 1.562 10 4.25 8.567 3.187 8z"/>
+                <path fill-rule="evenodd"
+                      d="M7.765 1.559a.5.5 0 0 1 .47 0l7.5 4a.5.5 0 0 1 0 .882l-7.5 4a.5.5 0 0 1-.47 0l-7.5-4a.5.5 0 0 1 0-.882l7.5-4zM1.563 6L8 9.433 14.438 6 8 2.567 1.562 6z"/>
+            </svg>
+            <h6>Simple interface makes learning log very easy to use.</h6>
+        </div>
+        <div class="col-s5 mt-5 ml-5">
+            <svg width="17em" height="8em" viewBox="0 0 16 16" class="bi bi-pen" fill="currentColor"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                      d="M5.707 13.707a1 1 0 0 1-.39.242l-3 1a1 1 0 0 1-1.266-1.265l1-3a1 1 0 0 1 .242-.391L10.086 2.5a2 2 0 0 1 2.828 0l.586.586a2 2 0 0 1 0 2.828l-7.793 7.793zM3 11l7.793-7.793a1 1 0 0 1 1.414 0l.586.586a1 1 0 0 1 0 1.414L5 13l-3 1 1-3z"/>
+                <path fill-rule="evenodd"
+                      d="M9.854 2.56a.5.5 0 0 0-.708 0L5.854 5.855a.5.5 0 0 1-.708-.708L8.44 1.854a1.5 1.5 0 0 1 2.122 0l.293.292a.5.5 0 0 1-.707.708l-.293-.293z"/>
+                <path d="M13.293 1.207a1 1 0 0 1 1.414 0l.03.03a1 1 0 0 1 .03 1.383L13.5 4 12 2.5l1.293-1.293z"/>
+            </svg>
+            <h6>Record and reference at your own pace.</h6>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
